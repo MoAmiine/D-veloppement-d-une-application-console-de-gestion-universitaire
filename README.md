@@ -16,5 +16,7 @@ Département peux avoir un à plusieurs cours 1..*
 Un cours n'est accessible que dans un seul et un seul département.
 
 ### Étape 3 — Diagramme de cas d’utilisation:
+../Conception/brief Differencie Cas D'utilisation.drawio
 
-### Étape 4 — Diagramme de classes UML
+### Étape 4 — Diagramme de classes UML:
+../Conception/brief Differencie Diagramme de classe.drawio
