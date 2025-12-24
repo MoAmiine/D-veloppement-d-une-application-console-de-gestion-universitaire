@@ -30,5 +30,9 @@ J'ai crée la classe Abstract Person.
 src/Abstract/Person.php
 
 ### Étape 3 — Classe Department:
+J'ai crée la classe Department.
+src/Entity/Department.php
 
 ### Étape 4 — Classe Course:
+J'ai crée la classe Course.
+src/Entity/Course.php

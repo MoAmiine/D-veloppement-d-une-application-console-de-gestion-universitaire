@@ -11,17 +11,16 @@ class Department
         $this->description = $description;
     }
 
-    public function getId()
-    {
-        $this->id;
+    public function getId(){
+        return $this->id;
     }
     public function getNom()
     {
-        $this->nom;
+        return $this->nom;
     }
     public function getDescription()
     {
-        $this->description;
+        return $this->description;
     }
     public function setId($id)
     {
