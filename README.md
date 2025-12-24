@@ -36,3 +36,27 @@ src/Entity/Department.php
 ### Étape 4 — Classe Course:
 J'ai crée la classe Course.
 src/Entity/Course.php
+
+## JOUR 3 — BASE DE DONNÉES & PDO:
+### Étape 1 — Modélisation DB:
+![upload](image.png)
+
+### Étape 2 — Script SQL:
+//SQL:
+
+CREATE DATABASE gestion;
+USE gestion;
+
+CREATE TABLE departments (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(50) NOT NULL,
+    description VARCHAR(150)
+)ENGINE = INNODB;
+    
+CREATE TABLE courses (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titre VARCHAR(50) NOT NULL,
+    volumeHoraire int,
+    department_id INT,
+    FOREIGN KEY (department_id) REFERENCES departments(id)
+)ENGINE = INNODB;
