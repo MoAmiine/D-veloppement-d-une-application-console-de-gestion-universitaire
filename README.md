@@ -61,3 +61,10 @@ CREATE TABLE courses (
     department_id INT,
     FOREIGN KEY (department_id) REFERENCES departments(id)
 )ENGINE = INNODB;
+
+### Étape 3 — Connexion PDO:
+Je me suis connectée à la base de donnée.
+src/Database/DatabaseConnection.php
+
+## JOUR 4 — CRUD DÉPARTEMENT:
+### Étape 1 — DepartmentRepository:
