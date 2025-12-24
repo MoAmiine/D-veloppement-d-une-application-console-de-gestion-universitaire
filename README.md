@@ -20,3 +20,15 @@ Un cours n'est accessible que dans un seul et un seul département.
 
 ### Étape 4 — Diagramme de classes UML:
 ../Conception/brief Differencie Diagramme de classe.drawio
+
+## JOUR 2 — BASE POO & ARCHITECTURE:
+### Étape 1 — Structure du projet:
+J'ai crée la structure du projet comme est assigné.
+
+### Étape 2 — Classe abstraite Person:
+J'ai crée la classe Abstract Person.
+src/Abstract/Person.php
+
+### Étape 3 — Classe Department:
+
+### Étape 4 — Classe Course:
