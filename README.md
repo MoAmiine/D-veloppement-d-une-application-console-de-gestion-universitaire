@@ -39,7 +39,8 @@ src/Entity/Course.php
 
 ## JOUR 3 — BASE DE DONNÉES & PDO:
 ### Étape 1 — Modélisation DB:
-![upload](image.png)
+<img width="323" height="149" alt="image" src="https://github.com/user-attachments/assets/0f00ee83-be2c-4c64-8bdb-86b97381eca0" />
+
 
 ### Étape 2 — Script SQL:
 //SQL:
