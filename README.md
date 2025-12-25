@@ -16,5 +16,55 @@ Département peux avoir un à plusieurs cours 1..*
 Un cours n'est accessible que dans un seul et un seul département.
 
 ### Étape 3 — Diagramme de cas d’utilisation:
+../Conception/brief Differencie Cas D'utilisation.drawio
 
-### Étape 4 — Diagramme de classes UML
+### Étape 4 — Diagramme de classes UML:
+../Conception/brief Differencie Diagramme de classe.drawio
+
+## JOUR 2 — BASE POO & ARCHITECTURE:
+### Étape 1 — Structure du projet:
+J'ai crée la structure du projet comme est assigné.
+
+### Étape 2 — Classe abstraite Person:
+J'ai crée la classe Abstract Person.
+src/Abstract/Person.php
+
+### Étape 3 — Classe Department:
+J'ai crée la classe Department.
+src/Entity/Department.php
+
+### Étape 4 — Classe Course:
+J'ai crée la classe Course.
+src/Entity/Course.php
+
+## JOUR 3 — BASE DE DONNÉES & PDO:
+### Étape 1 — Modélisation DB:
+<img width="323" height="149" alt="image" src="https://github.com/user-attachments/assets/0f00ee83-be2c-4c64-8bdb-86b97381eca0" />
+
+
+### Étape 2 — Script SQL:
+//SQL:
+
+CREATE DATABASE gestion;
+USE gestion;
+
+CREATE TABLE departments (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(50) NOT NULL,
+    description VARCHAR(150)
+)ENGINE = INNODB;
+    
+CREATE TABLE courses (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titre VARCHAR(50) NOT NULL,
+    volumeHoraire int,
+    department_id INT,
+    FOREIGN KEY (department_id) REFERENCES departments(id)
+)ENGINE = INNODB;
+
+### Étape 3 — Connexion PDO:
+Je me suis connectée à la base de donnée.
+src/Database/DatabaseConnection.php
+
+## JOUR 4 — CRUD DÉPARTEMENT:
+### Étape 1 — DepartmentRepository:
