@@ -1,10 +1,4 @@
 <?php 
-require '../Abstract/Person.php';
-
-require '../Database/DatabaseConnection.php';
-include '../Entity/utilisateur.php';
-
-
 
   $user = new Utilisateur(
     null, 
