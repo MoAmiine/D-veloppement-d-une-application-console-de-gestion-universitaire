@@ -31,7 +31,7 @@ switch ($choix) {
         $role = readline('role (admin / Utilisateur academique): ');
         $db = new DatabaseConnection('root', '');
         $conn = $db->getConnection('root', '');
-        if ($role){
+        if ($role = 'admin'){
         $admin = new Admnistrateur(null, $nom, $prenom, $email, $password, $role);
             $repo = new AdministrateurRepository();
             $repo->signUpAdmin($admin, $conn);
@@ -44,7 +44,7 @@ switch ($choix) {
         switch($role){
             case 'admin':
                 echo "********************************* \n";
-                echo "------------Bienvenue------------ \n";        
+                echo "------------Bienvenue ".$prenom."------------ \n";        
                 echo "********************************* \n";
                 echo "1 - gerer les formateurs \n";
                 echo "2 - gerer les etudiants \n";
@@ -57,7 +57,9 @@ switch ($choix) {
         
         break;
     
-    default:
-        
+    case '2':
+        echo '========== connection ============';
+        $email = readline('email :');
+        $password = readline('password :');
         break;
 }
