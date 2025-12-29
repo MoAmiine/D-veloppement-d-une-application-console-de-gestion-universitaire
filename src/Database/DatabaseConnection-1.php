@@ -5,16 +5,14 @@ class DatabaseConnection_1
     public $user = "root";
     public $pass = "";
 
-    public function __construct($db, $user, $pass)
+    public function __construct()
     {
-        $this->db = $db;
-        $this->user = $user;
-        $this->pass = $pass;
+
     }
-    public function getConnection($db, $user, $pass)
+    public function getConnection()
     {
         try {
-            return  new PDO("mysql:localhost=host, dbname=$db", $user, $pass);
+            return  new PDO("mysql:localhost=host, dbname=$this->db", $this->user, $this->pass);
         } catch (PDOException) {
             echo "error!!!";
         }
